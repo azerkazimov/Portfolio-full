@@ -21,6 +21,7 @@ const getServiceById = async (req, res)=>{
         res.status(500).json({ message: error.message });
     }
 }
+
 const createService = async (req, res)=>{
     try {
         const { name, description } = req.body;
